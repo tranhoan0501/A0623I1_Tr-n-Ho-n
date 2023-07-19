@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <h2>Caculator</h2>
+        <input id="so1" type="number">
+        <input id="so2" type="number"><br>
+        <input id="add" onclick="Addition()" type="button" value="Addition(+)">
+        <input id="sub" onclick="Subtraction()" type="button" value="Subtraction(-)">
+        <input id="mul" onclick="Multiplication()" type="button" value="Multiplication(x)">
+        <input id="div" onclick="Division()" type="button" value="Division(/)"><br>
+        <div id="result" style="color: mediumvioletred"></div>
+    </div>
+<script>
+
+    function Addition() {
+        let so1 = document.getElementById("so1").value
+        let so2 = document.getElementById("so2").value
+        const Addition = parseInt(so1) + parseInt(so2)
+        document.getElementById('result').innerHTML = 'Result Addition: '+ Addition;
+    }
+    function Subtraction() {
+        let so1 = document.getElementById("so1").value
+        let so2 = document.getElementById("so2").value
+        const Subtraction = parseInt(so1) - parseInt(so2)
+        document.getElementById('result').innerHTML = 'Result Subtraction: '+ Subtraction;
+    }
+    function Multiplication() {
+        let so1 = document.getElementById("so1").value
+        let so2 = document.getElementById("so2").value
+        const Multiplication = parseInt(so1) * parseInt(so2)
+        document.getElementById('result').innerHTML = 'Result Multiplication: '+ Multiplication;
+    }
+    function Division() {
+        let so1 = document.getElementById("so1").value
+        let so2 = document.getElementById("so2").value
+        const Division = parseInt(so1) / parseInt(so2)
+        document.getElementById('result').innerHTML = 'Result Division: '+ Division;
+    }
+
+
+</script>
+</body>
+</html>
