@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    let cc = prompt("Nhập chiều cao của bạn ...m");
+    let cn = prompt("Nhập cân nặng của bạn ...kg");
+    let BMI = cn/(cc*2)
+    if (BMI < 18)
+        confirm("Tình Trạng Của Bạn Là Underweight");
+    else if (BMI < 25.0)
+        confirm("Tình Trạng Của Bạn Là Normal");
+    else if (BMI < 30.0)
+        confirm("Tình Trạng Của Bạn Là Overweight");
+    else
+        confirm("Tình Trạng Của Bạn Là Obese");
+</script>
+</body>
+</html>
