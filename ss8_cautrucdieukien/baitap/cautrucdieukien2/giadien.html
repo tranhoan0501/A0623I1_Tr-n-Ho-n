@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập số kWh điện: ")
+    let b = prompt("Nhập số thời gian tiêu thụ điện: ...giờ")
+    let c = (a*b)/1000
+    if(c>=0&&c<51){
+        alert("Giá điện của bạn là: "+c*1678 +"VND")
+    }else if(c>50&&c<100 ){
+        alert("Giá điện của bạn là: "+c*1734 +"VND")
+    }else if(c>100&&c<201  ) {
+        alert("Giá điện của bạn là: " + c * 2014 + "VND")
+    }else if(c>200 &&c<301  ) {
+        alert("Giá điện của bạn là: " + c * 2538  + "VND")
+    }else if(c>300&&c<401 ) {
+        alert("Giá điện của bạn là: " + c  * 2834  + "VND")
+    }else if(c>401) {
+        alert("Giá điện của bạn là: " + c  * 2927  + "VND")
+    }
+</script>
+</body>
+</html>

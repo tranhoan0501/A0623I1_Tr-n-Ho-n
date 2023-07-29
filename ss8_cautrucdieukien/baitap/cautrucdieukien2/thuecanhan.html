@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập số lương của bạn: ...VND")
+    if(a>=0&&a<=5000000){
+        alert("Thuế thu nhập của bạn là 5%: "+a*5/100 +"VND")
+    }if(a>5000000&&a<=10000000){
+        alert("Thuế thu nhập của bạn là 10%: "+a*10/100+"VND" )
+    }if(a>10000000&&a<=18000000){
+        alert("Thuế thu nhập của bạn là 15%: "+a*15/100 +"VND")
+    }if(a>18000000&&a<=32000000){
+        alert("Thuế thu nhập của bạn là 20%: "+a*20/100 +"VND")
+    }if(a>32000000&&a<=52000000){
+        alert("Thuế thu nhập của bạn là 25%: "+a*25/100 +"VND")
+    }if(a>52000000&&a<=80000000){
+        alert("Thuế thu nhập của bạn là 30%: "+a*30/100 +"VND")
+    }if(a>80000000){
+        alert("Thuế thu nhập của bạn là 35%: "+a*35/100 +"VND")
+    }
+</script>
+</body>
+</html>

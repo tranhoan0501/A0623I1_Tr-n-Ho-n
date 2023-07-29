@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập cạnh a: ")
+    let b = prompt("Nhập cạnh b: ")
+    let c = prompt("Nhập cạnh c: ")
+    if (a<1 ||b<1 ||c<1 ){
+        alert("Chiều dài không hợp lệ ")
+    }else {
+        if (a+b>c){
+            alert("a b c là một cạnh của tam giác ")
+        }
+        if (a+c >b ){
+            alert("a b c là một cạnh của tam giác ")
+        }
+        if (c +b>a ){
+            alert("a b c là một cạnh của tam giác ")
+        }
+    }
+</script>
+</body>
+</html>
