@@ -8,13 +8,13 @@
 <script>
     let mang =[]
     let check = false;
-    for(let i=0;i<4;i++) {
+    for(let i=0;i<10;i++) {
         mang[i] = parseInt(prompt("Nhập phần tử mảng " + (i + 1)))
         document.writeln("Mảng"+i+" = "+mang[i]+"<br>")
     }
 
     let V = parseInt(prompt("Nhập số cần tìm "))
-    for(let i=0;i<4;i++) {
+    for(let i=0;i<10;i++) {
         if (mang[i]===V){
             mang.splice(i,1)
             check = true;
