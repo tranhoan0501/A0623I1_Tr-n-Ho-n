@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1,2,3,4,5,6,7,8,9,0,1]
+    let check=prompt("nhap so")
+    let dem=0
+    function mang(b ) {
+        for (let i=0;i<b.length;i++){
+            if (check==b[i]){
+                dem++
+            }
+        }
+    }mang(a)
+    if(dem==0){
+        alert(-1)
+    }if (dem>0){
+        alert(dem)
+    }
+</script>
+</body>
+</html>

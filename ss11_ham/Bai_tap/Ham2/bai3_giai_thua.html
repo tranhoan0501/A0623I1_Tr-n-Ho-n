@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhap so"))
+    function giaithua(b) {
+        if (b==0||b==1){
+            return 1
+        }else {
+            return b*giaithua(b-1);
+        }
+    }
+    giaithua(a)
+    alert(giaithua(a))
+</script>
+</body>
+</html>

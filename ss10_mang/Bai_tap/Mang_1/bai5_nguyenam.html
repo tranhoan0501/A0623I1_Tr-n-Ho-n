@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=[]
+    let dem=0
+    for (let i=0;i<6 ;i++){
+        mang[i]=prompt("Nhập phần tử thứ "+(i+1))
+    }
+    for(let i=0; i<6 ;i++){
+        document.writeln("Mảng"+i+" = "+mang[i]+"<br>")
+        if (" u e a i o ".includes(mang[i])){
+            dem++
+        }
+    }document.write(" Có "+ dem + " nguyên âm " )
+</script>
+</body>
+</html>

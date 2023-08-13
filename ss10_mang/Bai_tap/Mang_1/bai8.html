@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let mang=[]
+    for (let i=0;i<3 ;i++){
+        mang[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)))
+    }alert("Mảng trước khi sắp xếp: "+mang)
+    alert("Mảng sau khi sắp xếp giảm dần: "+ mang.sort((a,b ) =>{
+        return b-a
+    }).join(">"))
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập Lương Nhân Viên: ...VND "))
+    let b=a*20/100
+    let c=a-b
+    let d=a*15/100
+    let e=a-d
+    let f=a*5/100
+    let g=a-f
+    if (a>15000000){
+        alert("Thuế của nhân viên là: "+b+"VND" )
+        alert("Số tiền nhân viên nhận được: "+ c+"VND"  )
+    }else if (a<=15000000&&a>=7000000){
+        alert("Thuế của nhân viên là: "+d +"VND" )
+        alert("Số tiền nhân viên nhận được: "+ e +"VND" )
+    }else if (a<=0&&a<7000000){
+        alert("Thuế của nhân viên là: "+f +"VND" )
+        alert("Số tiền nhân viên nhận được: "+ g +"VND"  )
+    }
+</script>
+</body>
+</html>

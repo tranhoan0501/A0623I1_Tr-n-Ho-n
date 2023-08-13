@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=[]
+    let max=0
+    let index=0
+    let sum=0
+    for (let i=0;i<3 ;i++){
+        mang[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)))
+    }
+    for(let i=0; i<3 ;i++){
+        document.writeln("Mảng"+i+" = "+mang[i]+"<br>")
+        if(mang[i]>max ){
+            max=mang[i]
+            index=i
+        }sum+= mang[i]
+    }document.write(max+" Là số lớn nhất, "+"ở vị trí thứ "+index+"<br>")
+    document.write("Trung bình: "+sum/mang.length)
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang =[]
+    let check = false;
+    for(let i=0;i<4;i++) {
+        mang[i] = parseInt(prompt("Nhập phần tử mảng " + (i + 1)))
+        document.writeln("Mảng"+i+" = "+mang[i]+"<br>")
+    }
+
+    let V = parseInt(prompt("Nhập số cần tìm "))
+    for(let i=0;i<4;i++) {
+        if (mang[i]===V){
+            mang.splice(i,1)
+            check = true;
+        }
+    }
+    if(check){
+        document.write(V+" có trong mảng, "+mang)
+    }else {
+        document.write(V+" không có trong mảng ")
+
+    }
+
+
+</script>
+</body>
+</html>
