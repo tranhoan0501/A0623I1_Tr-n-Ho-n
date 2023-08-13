@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input onclick=play() type="button" value="Play">
+<script>
+    function play() {
+        let startingnumber = parseInt(prompt("Nhập vào số bắt đầu"))
+        let endingnumber   = parseInt(prompt("Nhập vào số kết thúc"))
+        let random = Math.floor(Math.random()* endingnumber)+startingnumber;
+        let nhap = parseInt(prompt("Nhập giá trị bạn muốn đoán"))
+        let count =1;
+        while (random !== nhap){
+            if (nhap > random || nhap < random){
+                alert("bạn đã thua");
+            }
+            count ++;
+            nhap = parseInt(prompt("Nhập lại giá trị bạn muốn đoán"))
+        }
+        if ( nhap === random){
+            alert("Bạn đã thắng")
+        }
+
+    }
+</script>
+</body>
+</html>
