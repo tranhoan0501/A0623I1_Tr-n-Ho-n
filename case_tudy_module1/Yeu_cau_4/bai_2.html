@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let b=prompt("nhap")
+    const a= b.toLowerCase().split("");
+    let dem = 0
+    let check = false
+    for (let i=0;i<=a.length;i++) {
+        check = false
+        for (let j = i+1; j <= a.length; i++) {
+            if (a[i] ===a[j]) {
+                check = true
+            }
+        }
+        if(!check){
+            dem++
+        }
+    }
+    alert(dem)
+</script>
+</body>
+</html>

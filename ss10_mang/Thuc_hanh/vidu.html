@@ -6,7 +6,24 @@
 </head>
 <body>
 <script>
-    console.log(new Array(5).toString());
+    function maxMinAvg(arr) {
+        //your code here
+        let min=0
+        let max=0
+        let tb=0
+        let a=0
+        let arrnew=[]
+        for(let i=0;i<arr.length;i++){
+            if(max<arr[i]){
+                max=arr[i]
+            }if(min>arr[i]){
+                min=arr[i]
+            }tb=tb+arr[i]}
+            a = tb/arr.length
+            arrnew.push(max,min,a)
+            return arrnew;
+    }
+    alert(maxMinAvg([1,5,10,-2]))
 </script>
 </body>
 </html>

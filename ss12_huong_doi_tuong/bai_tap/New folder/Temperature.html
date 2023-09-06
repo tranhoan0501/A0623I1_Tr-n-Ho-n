@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhietdo = function(C) {
+        this.C = C;
+        this.C = function() {
+            return C;
+        }
+        this.doF  = function() {
+            return C*1.8+32;
+        }
+        this.doKevin = function() {
+            return C+237.15;
+        }
+    }
+    let Nhietdo = new nhietdo(prompt("Nhap do C: "));
+    let nhietdoF = Nhietdo.doF()
+    let nhietdoKevin = Nhietdo.doKevin()
+    alert("do F: "+nhietdoF+"\ndo Kevin: "+nhietdoKevin)
+</script>
+</body>
+</html>

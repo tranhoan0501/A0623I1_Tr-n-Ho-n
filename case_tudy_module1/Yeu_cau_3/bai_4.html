@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="margin-left: 50px">MENU</h1>
+<h3 style="color: indianred">1. Cafe</h3>
+<h3 style="color: indianred">2. Cam vắt</h3>
+<h3 style="color: indianred">3. Nước ép cà rốt</h3>
+<h3 style="color: indianred">4. Nước ép cà chua</h3>
+<h3 style="color: indianred">5. Nước lọc</h3>
+<h3 style="color: indianred">6. Nước dừa </h3>
+<h3 style="color: indianred">7. Thoat  </h3>
+<button onclick="goimon()" type="button" style="height: 30px ; width: 100px">Gọi món </button>
+
+<script>
+    function goimon() {
+        do {
+            let number = parseInt(prompt("Chon mon"))
+            switch (number) {
+                case 1:
+                    var chon=parseInt(prompt("So luong"))
+                    alert("Gia tien: "+ chon*20000+"VND")
+                    break
+                case 2:
+                    var chon=parseInt(prompt("So luong"))
+                    alert("Gia tien: "+ chon*20000+"VND")
+                    break
+                case 3:
+                    var chon=parseInt(prompt("So luong"))
+                    alert("Gia tien: "+ chon*20000+"VND")
+                    break
+                case 4:
+                    var chon=parseInt(prompt("So luong"))
+                    alert("Gia tien: "+ chon*20000+"VND")
+                    break
+                case 5:
+                    var chon=parseInt(prompt("So luong"))
+                    alert("Gia tien: "+ chon*20000+"VND")
+                    break
+                case 6:
+                    var chon=parseInt(prompt("So luong"))
+                    alert("Gia tien: "+ chon*20000+"VND")
+                    break
+                case 7:
+                    return false
+                default:
+                    alert("Nhap lai ")
+            }
+        }while (true)
+    }
+</script>
+</body>
+</html>
